@@ -1,3 +1,7 @@
+
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 const images = [
   {
     preview:
@@ -86,8 +90,6 @@ const gallery = document.querySelector('.gallery');
 gallery.insertAdjacentHTML('beforeend', murkUpGallery(images));
 
 
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
 
 
 let galleryViewer = new SimpleLightbox('.gallery-item a', {captionsData: 'alt', captionDelay: 250,   });
